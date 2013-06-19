@@ -1,0 +1,20 @@
+<div id="page-wrap">
+
+<fieldset id="login">
+	<div id="error"><%=flash[:message]%></div>
+   <legend>Login</legend>
+  <%= form_for (@user),:url=>validate_login_url, :method => "post" ,:html=>{:class=>'form-signin'} do |f|%>  
+   <% if @user.errors.any? %>
+     
+    <% end %>
+   	 <div class="text-wrap"><%= f.text_field :email_id ,:id => 'input-box',:placeholder=>"Email"%></div>
+   	 <div class="text-wrap"><%=f.password_field :password ,:id => 'input-box',:placeholder=>"Password"%></div>
+   	 <div class="text-wrap"><%= f.submit "Login" , :id=>'btn-submit',:class=>'btn btn-large btn-primary'%></div>
+    <% end %>
+    
+    <div id="links">
+     <%= link_to "Login with google","/auth/google_oauth2" %>
+    </div>
+  </fieldset>
+
+</div>

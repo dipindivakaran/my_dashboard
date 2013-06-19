@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#tasks_tabs{
+	margin: 50px auto;
+    width: 800px;
+    min-height: 250px;
+}
+
+#tasks_controls input {
+    width: 95%;
+    height: 30px;
+   
+   
+}
+#tasks_controls {
+    margin-top: 16px;
+}
+
+.show_loader{
+	background: url(ajax-loader.gif) right no-repeat;
+    background-size: 20px 20px;
+}
+#status{
+	float: right;
+    height: 30px;
+    width: 30px;
+	
+}
+.show_completed{
+	background: url(completed.png) right no-repeat;
+    background-size: 24px 24px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+}
+.text-label {
+    color: #cdcdcc;
+    font-weight: bold;
+}
+.input-wrap{
+    margin: 25px 0px 17px 5px;
+}
+
+#dialog{
+	display: none;
+}
+
+.active{
+	background: #CECECE;
+}
+tr:hover { background: #CECECE; } 
+
+.odd {background-color: #EBEBEB; }
+
+table tr {
+    height: 35px;
+    font-family: sans-serif;
+}
+
+#login{
+    height: 200px;
+    margin: 150px auto;
+    text-align: center;
+    width: 400px;;
+}
+#login #input-box{
+	font-weight: bold;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 321px;
+
+}
+#error{
+	color: red;
+    font-family: Helvetica;
+    font-size: 12px;
+    height: 20px
+}
+
+#btn-submit{
+	height: 40px;
+    margin: 10px;
+    width: 100px;
+}
+
+#signout{
+	font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+

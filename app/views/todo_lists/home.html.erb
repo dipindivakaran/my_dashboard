@@ -1,0 +1,46 @@
+<div class="main">
+	<div id="signout"><%= link_to "Signout" ,:controller=>'users' ,:action=>'logout'%></div>
+	
+<div id="tasks_tabs" style="display: none;">
+	<ul id="tab-list">
+		
+	</ul>
+	<div id="tab-content">
+		<div class="input-wrap">
+			<input type="button" value="Completed" id="completed"/> 
+			<input type="button" value="Postpone" id="postpone"/>
+			<select>
+				<option>More Action...</option>
+			</select>
+		</div>
+		<div id="tasks_controls"> 
+		 	<input type="text" title="Enter new task" id="task_input"><div id="status"> </div>
+		</div>
+		
+	 <div id="tabitem1">
+        	
+	 </div>
+	 <div id="tabitem2">
+	 	
+	 </div>
+	 <div id="tabitem3">
+	 	
+	 </div>
+	 <div id="tabitem4">
+	 	
+	</div>
+	<div id="list_wrapper">
+			<table id="todo_list">
+				
+			</table>
+	</div>		
+</div>
+
+<div class="demo-description">
+</div>
+</div>
+ <div id="dialog" title="No Selected Task">
+  <p>Please Select Task</p>
+  </div>
+
+</div>
